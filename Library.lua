@@ -1336,6 +1336,9 @@ do
                 Textbox.Changed(Textbox.Value)
             end;
         end;
+        --[[ function Textbox:FocusLost(func)
+            Box.FocusLost:Connect(func)
+            end ]]
 
         if Textbox.Finished then
             Box.FocusLost:Connect(function(enter)
